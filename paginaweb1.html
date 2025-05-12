@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Investigación y Ejemplos de Etiquetas HTML</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+<body>
+    <div class="centrado">
+        <img src="logo.png" class="logo" alt="Logo Colegio Salesiano Don Bosco">
+        <h1>
+            Colegio Salesiano Don Bosco
+            <p>de Guatemala -SDBG-</p>
+            <p>Cuarto Bachillerato en Diseño Gráfico "A"</p>
+        </h1>
+    </div>
+    <hr>
+    <h1 class="centrado">Investigación y Ejemplos de Etiquetas HTML</h1>
+    <section>
+        <h2>Etiquetas Básicas</h2>
+        <ul>
+            <li>
+                <strong>&lt;html&gt; ... &lt;/html&gt;</strong><br>
+                <em>Define el documento HTML y es la raíz de la estructura.</em><br>
+                <code>&lt;html&gt; ... &lt;/html&gt;</code>
+            </li>
+            <li>
+                <strong>&lt;head&gt; ... &lt;/head&gt;</strong><br>
+                <em>Contiene metadatos como título, estilos y scripts.</em><br>
+                <code>&lt;head&gt; ... &lt;/head&gt;</code>
+            </li>
+            <li>
+                <strong>&lt;title&gt; ... &lt;/title&gt;</strong><br>
+                <em>Define el título que aparece en la barra del navegador.</em><br>
+                <code>&lt;title&gt;Mi Página&lt;/title&gt;</code>
+            </li>
+            <li>
+                <strong>&lt;body&gt; ... &lt;/body&gt;</strong><br>
+                <em>Contiene el contenido principal visible de la página web.</em><br>
+                <code>&lt;body&gt; ... &lt;/body&gt;</code>
+            </li>
+            <li>
+                <strong>&lt;p&gt; ... &lt;/p&gt;</strong><br>
+                <em>Define un párrafo de texto.</em><br>
+                <code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code>
+                <p>Este es un párrafo.</p>
+            </li>
+            <li>
+                <strong>&lt;h1&gt; ... &lt;/h6&gt;</strong><br>
+                <em>Encabezados jerárquicos, de más a menos importante.</em><br>
+                <code>&lt;h1&gt;Encabezado 1&lt;/h1&gt;</code>
+                <h3>Ejemplo:</h3>
+                <h1>Encabezado 1</h1>
+                <h2>Encabezado 2</h2>
+                <h3>Encabezado 3</h3>
+            </li>
+            <li>
+                <strong>&lt;br&gt;</strong><br>
+                <em>Salto de línea (no tiene cierre).</em><br>
+                <code>Primera línea&lt;br&gt;Segunda línea</code>
+                <p>Primera línea<br>Segunda línea</p>
+            </li>
+            <li>
+                <strong>&lt;a href="URL"&gt; ... &lt;/a&gt;</strong><br>
+                <em>Crea un enlace a otra página o recurso.</em><br>
+                <code>&lt;a href="https://www.facebook.com/movjuveoficial/?locale=es_LA"&gt;Visitar Ejemplo&lt;/a&gt;</code>
+                <p><a href="https://www.facebook.com/movjuveoficial/?locale=es_LA" >Visitar Ejemplo</a></p>
+            </li>
+            <li>
+                <strong>&lt;img src="URL" alt="texto"&gt;</strong><br>
+                <em>Inserta una imagen.</em><br>
+                <code>&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJ-6N9U5rrjCzCd2_ZpOAwi9_143sSgKq3EdZbAGo4Q&s&ec=72940542"&gt;</code>
+                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJ-6N9U5rrjCzCd2_ZpOAwi9_143sSgKq3EdZbAGo4Q&s&ec=72940542" ></p>
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h2>Etiquetas de Tablas en HTML</h2>
+        <p>Las tablas en HTML se utilizan para mostrar datos tabulares organizados en filas y columnas. Las etiquetas principales para construir una tabla son:</p>
+        <ul>
+            <li><strong>&lt;table&gt; ... &lt;/table&gt;</strong>: Define el contenedor de la tabla.</li>
+            <li><strong>&lt;tr&gt; ... &lt;/tr&gt;</strong>: Define una fila dentro de la tabla.</li>
+            <li><strong>&lt;th&gt; ... &lt;/th&gt;</strong>: Define una celda de encabezado (normalmente en la primera fila o columna).</li>
+            <li><strong>&lt;td&gt; ... &lt;/td&gt;</strong>: Define una celda de datos.</li>
+            <li><strong>&lt;thead&gt; ... &lt;/thead&gt;</strong>: Agrupa el encabezado de la tabla.</li>
+            <li><strong>&lt;tbody&gt; ... &lt;/tbody&gt;</strong>: Agrupa el cuerpo principal de la tabla.</li>
+            <li><strong>&lt;tfoot&gt; ... &lt;/tfoot&gt;</strong>: Agrupa el pie de la tabla, normalmente para totales o notas.</li>
+        </ul>
+        <h3>Ejemplo completo de una tabla con todas las etiquetas:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manzanas</td>
+                    <td>10</td>
+                    <td>Q0.50</td>
+                    <td>Q5.00</td>
+                </tr>
+                <tr>
+                    <td>Naranjas</td>
+                    <td>5</td>
+                    <td>Q0.80</td>
+                    <td>Q4.00</td>
+                </tr>
+                <tr>
+                    <td>Plátanos</td>
+                    <td>7</td>
+                    <td>Q0.30</td>
+                    <td>Q2.10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align:right;"><strong>Total General</strong></td>
+                    <td><strong>Q11.10</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <h3>Explicación del ejemplo:</h3>
+        <ul>
+            <li><code>&lt;thead&gt;</code> contiene la fila de encabezados con etiquetas <code>&lt;th&gt;</code>.</li>
+            <li><code>&lt;tbody&gt;</code> contiene las filas con datos usando <code>&lt;td&gt;</code>.</li>
+            <li><code>&lt;tfoot&gt;</code> contiene una fila con el total general, usando el atributo <code>colspan="3"</code> para unir tres celdas.</li>
+        </ul>
+        <h3>Otras etiquetas relacionadas:</h3>
+        <ul>
+            <li><strong>colspan</strong>: Atributo para que una celda abarque varias columnas.</li>
+            <li><strong>rowspan</strong>: Atributo para que una celda abarque varias filas.</li>
+        </ul>
+        <h3>Ejemplo con colspan y rowspan:</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th colspan="2">Contacto</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Rene</td>
+                <td>17</td>
+                <td>Email</td>
+                <td>r.saenz.db6a@email.com</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Teléfono</td>
+                <td>555-555</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2>Etiquetas de Listas</h2>
+        <h3>Lista ordenada (&lt;ol&gt;):</h3>
+        <ol>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+        </ol>
+        <h3>Lista no ordenada (&lt;ul&gt;):</h3>
+        <ul>
+            <li>Elemento A</li>
+            <li>Elemento B</li>
+        </ul>
+        <h3>Lista descriptiva (&lt;dl&gt;):</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para la web.</dd>
+            <dt>CSS</dt>
+            <dd>Hojas de estilo en cascada.</dd>
+        </dl>
+    </section>
+    <hr>
+    <section>
+        <h2>Etiquetas de Formularios</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="opcion">Elige una opción:</label>
+            <select id="opcion" name="opcion">
+                <option value="a">Opción A</option>
+                <option value="b">Opción B</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <ul>
+            <li>
+                <strong>&lt;form&gt; ... &lt;/form&gt;</strong>: Define un formulario.
+            </li>
+            <li>
+                <strong>&lt;input&gt;</strong>: Campo interactivo (texto, botón, etc.).
+            </li>
+            <li>
+                <strong>&lt;label&gt; ... &lt;/label&gt;</strong>: Etiqueta descriptiva para controles.
+            </li>
+            <li>
+                <strong>&lt;select&gt; ... &lt;/select&gt;</strong>: Menú desplegable.
+            </li>
+        </ul>
+      <hr>
+    <center>
+       <h5>Rene Saenz 24 </h5>   
+    </center>
+     
+
+</body>
+</html>
